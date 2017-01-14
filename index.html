@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6{
   margin-top:20px;
   margin-bottom:10px;
 }
+.rss-feed, .twitter-timeline {
+    float: center;
+}
+.clearfix{
+    clear:both
+}
+
 </style> 
 </head>
 
@@ -54,26 +61,24 @@ h1, h2, h3, h4, h5, h6{
 <p class = "comfortaa"><a href="http://feeds.feedburner.com/analytictalent/uGfW">ANALYTIC JOBS RSS</a></p>
 <p class = "comfortaa"><a href="http://www.helpmydecision.com/">DECISION MAKING TOOL</a></p>
 
-<h6 style = "font-family: sans-serif;font-size:24px;">Misc</h6>
-<p class = "comfortaa"><a href="http://mason.gmu.edu/~jericks3/index.html">My first web page I ever made</a></p>
+<div style = "padding-top: 20px">
+
+
+<div style = "padding-top: 0px">
+<a class = "rss-feed">RSS Feed - Jobs <script language="JavaScript" src='http://www.webrss.com/get_mysite.php?lang=js&mysiteId=104033'></script></a>
+</div>
+
 
 <div style = "padding-top: 20px">
-<h7 style = "font-family: sans-serif;font-size:24px;padding: 10px">RSS Feed for Indeed.com</h7>
-<p class = "comfortaa">You may have to allow for "unsafe scripts" in your browser</p>
-
-
-<!-- WebRSS.com NOTE: Do not modify code below this line  -->
-<iframe src="http://www.webrss.com/get_mysite.php?mysiteId=104033" width='300' frameborder='0'></iframe>
-
-<div style = "padding-top: 20px">
-<p class = "comfortaa">Analytics Tweets</p>
 <a class="twitter-timeline"  href="https://twitter.com/hashtag/analytics" data-widget-id="820040741711998976">#analytics Tweets</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
-          
+
+ 
 
 
-
-
+<div class="clearfix"></div>
 </body>
 </html>
+
+

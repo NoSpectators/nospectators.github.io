@@ -113,7 +113,7 @@
 </div>       
 
 <div style="background-color:white;color:black;padding:0px;">
-<h2 align = "center"> Sorting Algorithms </h2>
+<h2 align = "center"> Sorting Algorithms - BubbleSort</h2>
 </div>
 
 <div style="background-color:blue;color:white;padding:0px;">  
@@ -279,6 +279,61 @@ function bubbleSort(items) {
   return items
 }
 console.log(bubbleSort([4,3,1,99,-1]));
+</code>
+</pre>
+</div>
+
+<div style="background-color:white;color:black;padding:0px;">
+<h2 align = "center"> Sorting Algorithms - Selection Sort</h2>
+</div>
+
+<div style="background-color:blue;color:white;padding:0px;">  
+  <h2>Python - Selection Sort</h2>
+  <pre>
+  	<code>
+
+def main():
+    A = [5, 2, 9, 1, 11, 0, 67]
+
+    print "UNSORTED: ",A
+    SelectionSort(A)
+    print "SORTED: ",A
+
+def SelectionSort( A ):    
+    for i in range(len(A)):        
+        least = i        
+        for k in range(i+1, len(A)): 
+           if A[k] < A[least]:
+		least = k	
+        swap(A, least, i)
+
+def swap(A, x, y):    
+    temp = A[x]    
+    A[x] = A[y]    
+    A[y] = temp
+    
+main()
+</code>
+</pre>
+</div>
+
+<div style="background-color:black;color:white;padding:0px;">  
+  <h2>VBA - Selection Sort</h2>
+  <pre>
+  	<code>
+Sub SelectionSort()
+For i = 1 To 20
+    tmp = i
+    For j = i + 1 To 20
+        If Cells(j, 1) < Cells(tmp, 1) Then
+            tmp = j
+        End If
+    Next
+    temp = Cells(i, 1)
+    Cells(i, 1) = Cells(tmp, 1)
+    Cells(tmp, 1) = temp
+Next
+End Sub
 </code>
 </pre>
 </div>

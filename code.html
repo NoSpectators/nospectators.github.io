@@ -284,7 +284,7 @@ console.log(bubbleSort([4,3,1,99,-1]));
 </div>
 
 <div style="background-color:white;color:black;padding:0px;">
-<h2 align = "center"> Sorting Algorithms - Selection Sort</h2>
+<h2 align = "center"> Sorting Algorithms - SelectionSort</h2>
 </div>
 
 <div style="background-color:blue;color:white;padding:0px;">  
@@ -353,6 +353,57 @@ public class selectionsort {
         System.out.println();
     }  
 }  
+</code>
+</pre>
+</div>
+
+<div style="background-color:green;color:white;padding:0px;">  
+  <h2>C - Selection Sort</h2>
+  <pre>
+  	<code>
+#include &lt;stdio.h>
+
+void selectionSort(int arr[], int numbersSize){
+	int n = numbersSize;
+	int x,y;
+	for(x=0; x<n; x++)	{
+
+		int index_of_min = x;
+		
+		for(y=x; y<n; y++){
+			if(arr[index_of_min]>arr[y]){
+				index_of_min = y;
+			}
+		}
+		int temp = arr[x];
+		arr[x] = arr[index_of_min];
+		arr[index_of_min] = temp;
+	}
+	return;
+}
+
+void main(){
+	int numbers[] = { 10, 2, 78, 4, 45, 32, 7, 11 };
+	const int NUMBERS_SIZE = 8;
+	int i = 0;
+
+	printf("UNSORTED: ");
+	for (i = 0; i < NUMBERS_SIZE; ++i) {
+	  printf("%i ", numbers[i]);
+	}
+	printf("\n");
+
+	selectionSort(numbers, NUMBERS_SIZE);
+	
+	printf("SORTED: ");
+	for (i = 0; i < NUMBERS_SIZE; ++i) {
+	  printf("%i ", numbers[i]);
+	}
+	printf("\n");
+
+	return;
+
+}
 </code>
 </pre>
 </div>

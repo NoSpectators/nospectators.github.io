@@ -409,6 +409,28 @@ void main(){
 </div>
 
 
+<div style="background-color:purple;color:white;padding:0px;">  
+  <h2>R - Selection Sort</h2>
+  <pre>
+  	<code>
+selectionSort <- function(arr) {
+  # Find the smallest value in the list 
+  smallest <- min(arr)
+  rest <- arr[arr != smallest]
+  
+  if (length(rest) > 1) {
+    rest <- selectionSort(arr[arr != smallest])
+  }
+  
+  c(smallest, rest)
+}
+
+result <- selectionSort(c(3,1,2))
+result
+</code>
+</pre>
+</div>
+
 <div style="background-color:black;color:white;padding:0px;">  
   <h2>VBA - Selection Sort</h2>
   <pre>

@@ -209,5 +209,34 @@ main() {
 </div> 
 
 
+<div style="background-color:purple;color:white;padding:0px;">  
+  <h2>R - BubbleSort</h2>
+  <pre>
+  	<code>
+bubble_sort = function(vec) {
+  no_passes = 0
+  while(1) {
+    no_swaps = 0
+    for (j in 1 : (length(vec) - 1 - no_passes)) {
+      if (vec[j] > vec[j + 1]) {
+        s = vec[j]
+        vec[j] = vec[j+1]
+        vec[j+1] = s
+        no_swaps = no_swaps + 1
+      }
+    }
+    no_passes = no_passes + 1
+    if(no_swaps == 0) break
+  }
+  vec
+}
+vector<-c(1,9,8,5,44,23,90,89)
+result <- bubble_sort(vector)
+result 
+</code>
+</pre>
+</div>
+
+
 </body>
 </html>

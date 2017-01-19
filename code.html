@@ -366,12 +366,12 @@ public class selectionsort {
 void selectionSort(int arr[], int numbersSize){
 	int n = numbersSize;
 	int x,y;
-	for(x=0; x<n; x++)	{
+	for(x=0; x &lt; n; x++){
 
 		int index_of_min = x;
 		
-		for(y=x; y<n; y++){
-			if(arr[index_of_min]>arr[y]){
+		for(y=x; y &lt; n; y++){
+			if(arr[index_of_min] > arr[y]){
 				index_of_min = y;
 			}
 		}

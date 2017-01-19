@@ -112,6 +112,67 @@
 </pre>
 </div>       
 
+<div style="background-color:white;color:black;padding:0px;">
+<h2 align = "center"> Sorting Algorithms </h2>
+</div>
+
+<div style="background-color:blue;color:white;padding:0px;">  
+  <h2>Python - BubbleSort</h2>
+  <pre>
+  	<code>
+	def BubbleSort(A):
+	    #print "UNSORTED: ", A 
+	    for i in range(len(A)): #bubble sort goes pair-wise 
+			for k in range(len(A)-1,i,-1): 
+				if (A[k] < A[k-1]): #keep swapping values from left to right until whole thing is sorted 
+					swap(A, k, k-1)	
+					#print A 
+	    return A 
+	def swap(A, x, y):
+	    temp = A[x]
+	    A[x] = A[y]
+	    A[y] = temp
+</code>
+</pre>
+</div> 
+
+<div style="background-color:orange;color:white;padding:0px;">  
+  <h2>Java - BubbleSort</h2>
+  <pre>
+  	<code>
+    public class BubbleSort {
+        public static void main(String[] args) {               
+            int intArray[] = {5,90,35,45,150,3};                 
+            
+            bubbleSort(intArray);                            
+            
+            for(int i=0; i < intArray.length; i++){
+                    System.out.print(intArray[i] + " ");
+            }
+            System.out.println();
+ 
+        } 
+        public static void bubbleSort(int[] intArray) {               
+            int n = intArray.length;
+            int temp = 0;               
+            for(int i=0; i < n; i++){
+                for(int j=1; j < (n-i); j++){                               
+                        if(intArray[j-1] > intArray[j]){
+                                //swap the elements!
+                                temp = intArray[j-1];
+                                intArray[j-1] = intArray[j];
+                                intArray[j] = temp;
+                        }
+                       
+                }
+            }       
+        }
+    }
+</code>
+</pre>
+</div> 
+
+
 
 
 

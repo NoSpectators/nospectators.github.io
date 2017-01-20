@@ -606,5 +606,26 @@ int main(void) {
 </pre>
 </div> 
 
+<div style="background-color:purple;color:white;padding:0px;">  
+  <h2>R - Insertion Sort</h2>
+  <pre>
+  	<code>
+insertionsort <- function(x){
+  for(i in 2:(length(x))){
+    value <- x[i]
+    j <- i - 1
+    while(j >= 1 && x[j] > value){
+      x[j+1] <- x[j]
+      j <- j-1
+    }
+    x[j+1] <- value
+  }
+  x
+} 
+insertionsort(c(4, 65, 2, -31, 0, 99, 83, 782, 1))
+</code>
+</pre>
+</div> 
+
 </body>
 </html>

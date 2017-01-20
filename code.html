@@ -627,5 +627,61 @@ insertionsort(c(4, 65, 2, -31, 0, 99, 83, 782, 1))
 </pre>
 </div> 
 
+<div style="background-color:black;color:white;padding:0px;">  
+  <h2>Visual Basic (VB not VBA) - Insertion Sort</h2>
+  <pre>
+  	<code>
+' insert sort
+
+Public Sub InsertSort(ByRef A() As Variant, ByVal Lb As Long, ByVal Ub As Long)
+    Dim t As Variant
+    Dim i As Long
+    Dim j As Long
+
+    ' sort A[Lb..Ub]
+    For i = Lb + 1 To Ub
+        t = A(i)
+
+        ' shift elements down until insertion point found
+        For j = i - 1 To Lb Step -1
+            If A(j) <= t Then Exit For
+            A(j + 1) = A(j)
+        Next j
+
+        ' insert
+        A(j + 1) = t
+    Next i
+End Sub
+</code>
+</pre>
+</div> 
+
+
+<div style="background-color:grey;color:white;padding:0px;">  
+  <h2>JavaScript - Insertion Sort</h2>
+  <pre>
+  	<code>
+function insertionSort(unsortedList) {
+    var len = unsortedList.length;
+    for (var i = 0; i < len; i++) {
+        var tmp = unsortedList[i]; //Copy of the current element.
+        /*Check through the sorted part and compare with the number in tmp. If large, shift the number*/
+        for (var j = i - 1; j >= 0 && (unsortedList[j] > tmp); j--) {
+            //Shift the number
+            unsortedList[j + 1] = unsortedList[j];
+        }
+        //Insert the copied number at the correct position
+        //in sorted part
+        unsortedList[j + 1] = tmp;
+    }
+}
+
+var ul = [99, 0, -100, 24, 1, 3, 2];
+insertionSort(ul);
+console.log(ul);
+</code>
+</pre>
+</div> 
+
 </body>
 </html>

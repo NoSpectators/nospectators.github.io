@@ -1,6 +1,5 @@
 #include <stdio.h>
 #define MAX 10
-// changed comment
 
 void bubbleSort(int list[]) {
    int temp;

@@ -166,13 +166,4 @@ with open('vacant_zillow_data.csv','wb') as fp:
                 'zestimate_valuation_range_high',
                 'zestimate_valuationRange_low',
                 'zestimate_percentile'])
-    a.writerows(vacant_zillow_data)  
-        
-
-            
-            
-            
-            
-            
-            
->>>>>>> 2b93400195eb6dd38d578f49b17fa2d6eb187742
+    a.writerows(vacant_zillow_data)
